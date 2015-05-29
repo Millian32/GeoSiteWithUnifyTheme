@@ -1,0 +1,95 @@
+﻿@using Kendo.Mvc.UI
+
+@model BrunsHeadering.Models.PicViewModel
+
+<script type="text/x-kendo-tmpl" id="template">
+    <div class="product">
+        <img src="#:PicFileName#" height="138" width="138">
+    </div>
+</script>
+
+<div class="demo-section">
+    @(Html.Kendo().ListView(Model.ListFileNames)
+    .Name("listView")
+    .TagName("div")
+    .ClientTemplateId("template")
+    .DataSource(dataSource =>
+    {
+        dataSource.Read(read => read.Action("Pics_Read", "Home", new { dir = Model.Directory }));
+        dataSource.PageSize(12);
+    })
+    .Pageable()
+    )
+</div>
+
+<style scoped>
+    .demo-section {
+        padding: 5px;
+        width: 625px;
+    }
+
+    #listView {
+        padding: 10px;
+        margin-bottom: -1px;
+        min-width: 500px;
+        min-height: 500px;
+    }
+
+    .product {
+        float: left;
+        position: relative;
+        width: 138px;
+        height: 138px;
+        margin: 2px;
+        padding: 2px;
+    }
+
+        .product img {
+            width: 138px;
+            height: 138px;
+            padding: 2px;
+        }
+
+        .product h3 {
+            margin: 0;
+            padding: 3px 5px 0 0;
+            max-width: 96px;
+            overflow: hidden;
+            line-height: 1.1em;
+            font-size: .9em;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #999;
+        }
+
+        .product p {
+            visibility: hidden;
+        }
+
+        .product:hover p {
+            visibility: visible;
+            position: absolute;
+            width: 138px;
+            height: 138px;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            line-height: 110px;
+            vertical-align: middle;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0,0,0,0.75);
+            transition: background .2s linear, color .2s linear;
+            -moz-transition: background .2s linear, color .2s linear;
+            -webkit-transition: background .2s linear, color .2s linear;
+            -o-transition: background .2s linear, color .2s linear;
+        }
+
+        .k-listview:after, .product dl:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+</style>

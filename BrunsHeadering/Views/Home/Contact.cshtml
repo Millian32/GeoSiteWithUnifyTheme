@@ -1,0 +1,45 @@
+﻿@{ ViewBag.Title = "Contact"; }
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<h3></h3>
+<br />
+
+@(Html.Kendo().TabStrip()
+        .Name("ContactsTabStrip")
+        .Items(items =>
+        {
+            items.Add()
+                .Text("Phone")
+                .Selected(true)
+                .Content(@<text>
+                    <p>
+                        <span class="label">Cell:</span>
+                        <span>507-530-4551</span>
+                    </p>
+                </text>)
+                .ContentHtmlAttributes(new { style = "min-height: 200px" });
+            items.Add()
+                .Text("Email")
+                .Content(@<text>
+                    <p>
+                        <span class="label">General:</span>
+                        <span><a href="mailto:ericgbruns@gmail.com">ericgbruns@gmail.com</a></span>
+                    </p>
+                </text>)
+                .ContentHtmlAttributes(new { style = "min-height: 200px" });
+            items.Add()
+                .Text("Address")
+                .Content(@<text>
+                    <p>
+                        Eric Bruns - Owner of Bruns Headering Inc. <br />
+                        525 South Byron Ave <br />
+                        Tea, SD 57064
+                    </p>
+                </text>)
+                .ContentHtmlAttributes(new { style = "min-height: 200px" });
+        })
+)

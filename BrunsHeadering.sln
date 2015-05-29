@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrunsHeadering", "BrunsHeadering\BrunsHeadering.csproj", "{007E5CB7-BE9B-468A-8249-D6305CD224F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrunsHeaderingTests", "BrunsHeaderingTests\BrunsHeaderingTests.csproj", "{AEBEED94-80B0-4DAF-A07F-D6519B47FEF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{007E5CB7-BE9B-468A-8249-D6305CD224F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007E5CB7-BE9B-468A-8249-D6305CD224F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007E5CB7-BE9B-468A-8249-D6305CD224F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007E5CB7-BE9B-468A-8249-D6305CD224F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEBEED94-80B0-4DAF-A07F-D6519B47FEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEBEED94-80B0-4DAF-A07F-D6519B47FEF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEBEED94-80B0-4DAF-A07F-D6519B47FEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEBEED94-80B0-4DAF-A07F-D6519B47FEF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

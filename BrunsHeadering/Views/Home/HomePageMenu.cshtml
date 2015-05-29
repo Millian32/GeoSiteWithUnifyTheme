@@ -1,0 +1,83 @@
+﻿@using BrunsHeadering.Models;
+
+@*<script type="text/javascript">
+    function Select(e) {
+        var item = e;
+        //e.customArgs["Cp"] = "Cp";
+    }
+</script>*@
+
+@(Html.Kendo().Menu()
+      .Name("Menu")
+      //.Events(e => e.Open("Select"))
+      .Items(items =>
+      {
+          items.Add().Text("Home").Action("Index", "Home");
+
+          items.Add().Text("List of Jobs")
+                     .Items(children =>
+               {
+                   children.Add().Text("Educational").Action("ListOfJobs_Edu", "Home");
+                   children.Add().Text("Government").Action("ListOfJobs_Gov", "Home");
+                   children.Add().Text("Healthcare").Action("ListOfJobs_Heal", "Home");
+                   children.Add().Text("Community").Action("ListOfJobs_Comm", "Home");
+                   children.Add().Text("Housing").Action("ListOfJobs_House", "Home");
+                   children.Add().Text("Business").Action("ListOfJobs_Bus", "Home");
+               });
+
+          items.Add().Text("Flushing/Purging").Action("FlushPurge", "Home");
+
+          items.Add().Text("Project Photos")
+                     .Items(children =>
+               {
+                   children.Add().Text("Camp Ripley").Action("PicsListView", "Home", new { menuSelected = "CampRipley" });
+                   children.Add().Text("Iowa State Maximum Security Prison").Action("PicsListView", "Home", new { menuSelected = "IowaPrison" });
+                   children.Add().Text("Lincoln NE Public School District Office").Action("PicsListView", "Home", new { menuSelected = "LincolnSchool" });
+                   children.Add().Text("Nebraska Cornhuskers Housing Project Geo Addition").Action("PicsListView", "Home", new { menuSelected = "Cornhuskers" });
+               });
+
+          items.Add().Text("What is Geothermal").Action("WhatIsGeothermal", "Home");
+
+          items.Add().Text("Contact").Action("Contact", "Home");
+
+          items.Add().Text("What We Do").Action("WhatWeDo", "Home");
+      })
+          
+)
+
+<style scoped="scoped">
+    #menu h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 5px 10px;
+    }
+
+    #template img {
+        margin: 5px 20px 0 0;
+        float: left;
+    }
+
+    #template {
+        width: 380px;
+    }
+
+        #template ol {
+            float: left;
+            margin: 0;
+            padding: 10px 10px 0 10px;
+        }
+
+        #template:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        #template .k-button {
+            float: left;
+            clear: left;
+            margin: 5px 0 5px 12px;
+        }
+</style>
