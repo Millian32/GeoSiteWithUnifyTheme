@@ -15,7 +15,7 @@ namespace BrunsHeadering.Controllers
         [OutputCache(Duration = 43200)]
         public ViewResult Index()
         {
-            return View();
+            return View("IndexU");
         }
 
         [OutputCache(Duration = 43200)]
