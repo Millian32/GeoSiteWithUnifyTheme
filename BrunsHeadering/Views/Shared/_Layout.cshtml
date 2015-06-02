@@ -1,78 +1,78 @@
 ﻿<!DOCTYPE html>
-<html>
-    <head>
-        <title>@ViewBag.Title</title>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 
-    	<link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.common.min.css")" rel="stylesheet" type="text/css" />
-	    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.mobile.all.min.css")" rel="stylesheet" type="text/css" />
-	    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
-	    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.metro.min.css")" rel="stylesheet" type="text/css" />
-	    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.dataviz.metro.min.css")" rel="stylesheet" type="text/css" />
-        <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+<head>
+    <title>Bruns Headering</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<script src="@Url.Content("~/Scripts/kendo/2014.3.1119/jquery.min.js")"></script>
-	<script src="@Url.Content("~/Scripts/kendo/2014.3.1119/jszip.min.js")"></script>
-	<script src="@Url.Content("~/Scripts/kendo/2014.3.1119/kendo.all.min.js")"></script>
-	<script src="@Url.Content("~/Scripts/kendo/2014.3.1119/kendo.aspnetmvc.min.js")"></script>
-	<script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
+    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.common.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.mobile.all.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.metro.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.dataviz.metro.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+
+    <script src="@Url.Content("~/Scripts/kendo/2014.3.1119/jquery.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2014.3.1119/jszip.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2014.3.1119/kendo.all.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2014.3.1119/kendo.aspnetmvc.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
     <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="UnifyTheme/Unify-v1.7/HTML/favicon.ico">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="UnifyTheme/Unify-v1.7/HTML/favicon.ico">
 
-        <!-- Web Fonts -->
-        <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
 
-        <!-- CSS Global Compulsory -->
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/plugins/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/css/style.css">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/plugins/bootstrap/css/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/css/style.css")" />
 
-        <!-- CSS Header and Footer -->
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/css/headers/header-default.css">
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/css/footers/footer-v1.css">
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/css/headers/header-default.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/css/footers/footer-v1.css")" />
 
-        <!-- CSS Implementing Plugins -->
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/plugins/animate.css">
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/plugins/line-icons/line-icons.css">
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/plugins/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/plugins/parallax-slider/css/parallax-slider.css">
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/plugins/animate.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/plugins/line-icons/line-icons.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/plugins/font-awesome/css/font-awesome.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/plugins/parallax-slider/css/parallax-slider.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css")" />
 
-        <!-- CSS Customization -->
-        <link rel="stylesheet" href="UnifyTheme/Unify-v1.7/HTML/assets/css/custom.css">
-
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/css/custom.css")" />
 </head>
-    <body>
-        <header>
-            @*<div class="content-wrapper">
-                <div class="float-left">
 
-                    <hgroup class="title">*@
-                        <h1 style="color:darkseagreen">Bruns Headering Inc.</h1>
-                            <h3>COMMERCIAL GEOTHERMAL SYSTEMS</h3>
-                    @*</hgroup>*@
+<body>
+    <header>
+        <hgroup class="title">
+            <h1 style="color:darkseagreen">Bruns Headering Inc.</h1>
+            <h3>COMMERCIAL GEOTHERMAL SYSTEMS</h3>
+        </hgroup>
+        <nav>
+            @Html.Partial("HomePageMenuU")
+        </nav>
+    </header>
+    <div id="body">
+        @RenderBody()
+    </div>
 
-                @*</div>*@
-                @*<div class="float-right">
-                    <nav>
-                            @Html.Partial("HomePageMenu")
-                    </nav>
-                </div>*@
-            @*</div>*@
-        </header>
-        @*<div id="body">*@
-            @*<section class="content-wrapper main-content clear-fix">*@
-                @RenderBody()
-            @*</section>*@
-        @*</div>*@
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - MDW</p>
+            </div>
+        </div>
+    </footer>
 
-        <footer>
-            @*<div class="content-wrapper">*@
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - MDW</p>
-                </div>
-            @*</div>*@
-        </footer>
-
-    </body>
+</body>
 </html>
