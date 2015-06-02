@@ -5293,6 +5293,10 @@
     <Content Include="UnifyTheme\Unify-v1.7\HTML\assets\plugins\wow-animations\README.md" />
     <Content Include="Views\Home\IndexU.cshtml" />
     <Content Include="Views\Home\HomePageMenuU.cshtml" />
+    <Content Include="Views\Home\MainSlider.cshtml" />
+    <Content Include="Views\Home\MainText.cshtml" />
+    <Content Include="Views\Home\MainContentPart.cshtml" />
+    <Content Include="Views\Home\Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
