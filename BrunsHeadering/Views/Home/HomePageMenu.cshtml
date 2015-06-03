@@ -1,83 +1,105 @@
-﻿@using BrunsHeadering.Models;
+﻿<div class="wrapper">
+    <!--=== Header ===-->
 
-@*<script type="text/javascript">
-    function Select(e) {
-        var item = e;
-        //e.customArgs["Cp"] = "Cp";
-    }
-</script>*@
+    <div class="header">
 
-@(Html.Kendo().Menu()
-      .Name("Menu")
-      //.Events(e => e.Open("Select"))
-      .Items(items =>
-      {
-          items.Add().Text("Home").Action("Index", "Home");
+        <div class="container">
+            <!-- Toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <!-- End Toggle -->
+        </div><!--/end container-->
 
-          items.Add().Text("List of Jobs")
-                     .Items(children =>
-               {
-                   children.Add().Text("Educational").Action("ListOfJobs_Edu", "Home");
-                   children.Add().Text("Government").Action("ListOfJobs_Gov", "Home");
-                   children.Add().Text("Healthcare").Action("ListOfJobs_Heal", "Home");
-                   children.Add().Text("Community").Action("ListOfJobs_Comm", "Home");
-                   children.Add().Text("Housing").Action("ListOfJobs_House", "Home");
-                   children.Add().Text("Business").Action("ListOfJobs_Bus", "Home");
-               });
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+            <div class="container">
+                <ul class="nav navbar-nav">
 
-          items.Add().Text("Flushing/Purging").Action("FlushPurge", "Home");
+                    <!-- Home -->
+                    <li class="dropdown active">
+                        <li class="active"><a href='@Url.Action("Index", "Home")'>Home</a></li>
+                    <!-- End Home -->
 
-          items.Add().Text("Project Photos")
-                     .Items(children =>
-               {
-                   children.Add().Text("Camp Ripley").Action("PicsListView", "Home", new { menuSelected = "CampRipley" });
-                   children.Add().Text("Iowa State Maximum Security Prison").Action("PicsListView", "Home", new { menuSelected = "IowaPrison" });
-                   children.Add().Text("Lincoln NE Public School District Office").Action("PicsListView", "Home", new { menuSelected = "LincolnSchool" });
-                   children.Add().Text("Nebraska Cornhuskers Housing Project Geo Addition").Action("PicsListView", "Home", new { menuSelected = "Cornhuskers" });
-               });
+                    <!-- List of Jobs -->
+                    <li class="dropdown active">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            List of Jobs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href='@Url.Action("ListOfJobs_Edu", "Home")'>Educational</a></li>
+                            <li class="active"><a href='@Url.Action("ListOfJobs_Gov", "Home")'>Government</a></li>
+                            <li class="active"><a href='@Url.Action("ListOfJobs_Heal", "Home")'>Healthcare</a></li>
+                            <li class="active"><a href='@Url.Action("ListOfJobs_Comm", "Home")'>Community</a></li>
+                            <li class="active"><a href='@Url.Action("ListOfJobs_House", "Home")'>Housing</a></li>
+                            <li class="active"><a href='@Url.Action("ListOfJobs_Bus", "Home")'>Business</a></li>
+                        </ul>
+                    </li>
+                    <!-- End List of Jobs -->
 
-          items.Add().Text("What is Geothermal").Action("WhatIsGeothermal", "Home");
+                        <!-- Flushing/Purging -->
+                    <li class="dropdown active">
+                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
+                            Flushing/Purging
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href='@Url.Action("FlushPurge", "Home")'>Flushing/Purging</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Flushing/Purging -->
 
-          items.Add().Text("Contact").Action("Contact", "Home");
+                    <!-- Project Photos -->
+                    <li class="dropdown active">
+                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
+                            Project Photos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href='@Url.Action("PicsListView", "Home", new { menuSelected = "CampRipley" })'>Camp Ripley</a></li>
+                            <li class="active"><a href='@Url.Action("PicsListView", "Home", new { menuSelected = "IowaPrison" })'>Iowa State Maximum Security Prison</a></li>
+                            <li class="active"><a href='@Url.Action("PicsListView", "Home", new { menuSelected = "LincolnSchool" })'>Lincoln NE Public School District Office</a></li>
+                            <li class="active"><a href='@Url.Action("PicsListView", "Home", new { menuSelected = "Cornhuskers" })'>Nebraska Cornhuskers Housing Project Geo Addition</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Project Photos -->
 
-          items.Add().Text("What We Do").Action("WhatWeDo", "Home");
-      })
-          
-)
+                    <!-- What is Geothermal -->
+                    <li class="dropdown active">
+                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
+                            What is Geothermal
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href='@Url.Action("WhatIsGeothermal", "Home")'>What Is Geothermal</a></li>
+                        </ul>
+                    </li>
+                    <!-- End GeoThermal -->
 
-<style scoped="scoped">
-    #menu h2 {
-        font-size: 1em;
-        text-transform: uppercase;
-        padding: 5px 10px;
-    }
+                    <!-- Contact -->
+                    <li class="dropdown active">
+                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href='@Url.Action("Contact", "Home")'>Contact</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Contact -->
 
-    #template img {
-        margin: 5px 20px 0 0;
-        float: left;
-    }
+                    <!-- What We Do -->
+                    @*<li class="dropdown active">
+                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
+                            What We Do
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href='@Url.Action("WhatWeDo", "Home")'>What We Do</a></li>
+                        </ul>
+                    </li>*@
+                    <!-- End Contact -->
 
-    #template {
-        width: 380px;
-    }
+                </ul>
 
-        #template ol {
-            float: left;
-            margin: 0;
-            padding: 10px 10px 0 10px;
-        }
+            </div> <!--/end container-->
+        </div> <!--/navbar-collapse-->
+    </div> <!--=== End Header ===-->
 
-        #template:after {
-            content: ".";
-            display: block;
-            height: 0;
-            clear: both;
-            visibility: hidden;
-        }
-
-        #template .k-button {
-            float: left;
-            clear: left;
-            margin: 5px 0 5px 12px;
-        }
-</style>
+</div> <!--end wrapper -->

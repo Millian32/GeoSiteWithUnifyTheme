@@ -18,14 +18,12 @@
     <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.metro.min.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/kendo/2014.3.1119/kendo.dataviz.metro.min.css")" rel="stylesheet" type="text/css" />
-   @*@<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />*@
 
     <script src="@Url.Content("~/Scripts/kendo/2014.3.1119/jquery.min.js")"></script>
     <script src="@Url.Content("~/Scripts/kendo/2014.3.1119/jszip.min.js")"></script>
     <script src="@Url.Content("~/Scripts/kendo/2014.3.1119/kendo.all.min.js")"></script>
     <script src="@Url.Content("~/Scripts/kendo/2014.3.1119/kendo.aspnetmvc.min.js")"></script>
     <script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
-    @*<script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>*@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="UnifyTheme/Unify-v1.7/HTML/favicon.ico">
@@ -49,54 +47,28 @@
     <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css")" />
 
     <!-- CSS Customization -->
-    @*<link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/css/custom.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/UnifyTheme/Unify-v1.7/HTML/assets/css/custom.css")" />
 
     <!-- JS Global Compulsory -->
     <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/plugins/jquery/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- JS Implementing Plugins -->
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/plugins/back-to-top.js"></script>
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/plugins/smoothScroll.js"></script>
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/plugins/parallax-slider/js/modernizr.js"></script>
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
-    <!-- JS Customization -->
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/js/custom.js"></script>
-    <!-- JS Page Level -->
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/js/app.js"></script>
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/js/plugins/owl-carousel.js"></script>
-    <script type="text/javascript" src="UnifyTheme/Unify-v1.7/HTML/assets/js/plugins/parallax-slider.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function () {
-            App.init();
-            OwlCarousel.initOwlCarousel();
-            ParallaxSlider.initParallaxSlider();
-        });
-    </script>*@
 </head>
 
 <body>
+
     <header>
         <hgroup class="title">
             <h1 style="color:darkseagreen">Bruns Headering Inc.</h1>
             <h3>COMMERCIAL GEOTHERMAL SYSTEMS</h3>
         </hgroup>
         <nav>
-            @Html.Partial("HomePageMenuU")
+            @Html.Partial("HomePageMenu")
         </nav>
     </header>
     <div id="body">
         @RenderBody()
     </div>
-
-    <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p>&copy; @DateTime.Now.Year - MDW</p>
-            </div>
-        </div>
-    </footer>
 
 </body>
 </html>

@@ -4146,7 +4146,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -4277,9 +4276,7 @@
     <Content Include="Views\Shared\EditorTemplates\Time.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Url.cshtml" />
     <Content Include="Views\Home\PicsListView.cshtml" />
-    <Content Include="Views\Home\HomePageMenu.cshtml" />
     <Content Include="Views\Home\FlushPurge.cshtml" />
-    <Content Include="Views\Home\WhatWeDo.cshtml" />
     <Content Include="Views\Home\WhatIsGeothermal.cshtml" />
     <Content Include="Views\Home\ListOfJobs_Edu.cshtml" />
     <Content Include="Views\Home\ListOfJobs_Gov.cshtml" />
@@ -5291,8 +5288,8 @@
     <Content Include="UnifyTheme\Unify-v1.7\HTML\assets\plugins\vector-map\README.md" />
     <Content Include="UnifyTheme\Unify-v1.7\HTML\assets\plugins\wow-animations\LICENSE-MIT" />
     <Content Include="UnifyTheme\Unify-v1.7\HTML\assets\plugins\wow-animations\README.md" />
-    <Content Include="Views\Home\IndexU.cshtml" />
-    <Content Include="Views\Home\HomePageMenuU.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\HomePageMenu.cshtml" />
     <Content Include="Views\Home\MainSlider.cshtml" />
     <Content Include="Views\Home\MainText.cshtml" />
     <Content Include="Views\Home\MainContentPart.cshtml" />
