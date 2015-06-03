@@ -220,5 +220,6 @@ C:\GitHub\GeoSiteWithUnifyTheme\BrunsHeadering\bin\sv-SE\Kendo.Mvc.resources.dll
 C:\GitHub\GeoSiteWithUnifyTheme\BrunsHeadering\bin\tr-TR\Kendo.Mvc.resources.dll
 C:\GitHub\GeoSiteWithUnifyTheme\BrunsHeadering\bin\uk-UA\Kendo.Mvc.resources.dll
 C:\GitHub\GeoSiteWithUnifyTheme\BrunsHeadering\bin\zh-CN\Kendo.Mvc.resources.dll
+C:\GitHub\GeoSiteWithUnifyTheme\BrunsHeadering\obj\Debug\BrunsHeadering.csprojResolveAssemblyReference.cache
 C:\GitHub\GeoSiteWithUnifyTheme\BrunsHeadering\obj\Debug\BrunsHeadering.dll
 C:\GitHub\GeoSiteWithUnifyTheme\BrunsHeadering\obj\Debug\BrunsHeadering.pdb
