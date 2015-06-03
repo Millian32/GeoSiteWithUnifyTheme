@@ -58,13 +58,15 @@
 <body>
 
     <header>
-        <hgroup class="title">
+        <div float="left">
             <h1 style="color:darkseagreen">Bruns Headering Inc.</h1>
             <h3>COMMERCIAL GEOTHERMAL SYSTEMS</h3>
-        </hgroup>
-        <nav>
-            @Html.Partial("HomePageMenu")
-        </nav>
+            </br>
+            <p>  </p>
+            <nav>
+                @Html.Partial("HomePageMenu")
+            </nav>
+        </div>  
     </header>
     <div id="body">
         @RenderBody()

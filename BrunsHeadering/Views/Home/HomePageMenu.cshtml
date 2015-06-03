@@ -19,7 +19,9 @@
 
                     <!-- Home -->
                     <li class="dropdown active">
-                        <li class="active"><a href='@Url.Action("Index", "Home")'>Home</a></li>
+                        <li class="active">
+                            <a href='@Url.Action("Index", "Home")'>Home</a>
+                        </li>
                     <!-- End Home -->
 
                     <!-- List of Jobs -->
@@ -38,15 +40,11 @@
                     </li>
                     <!-- End List of Jobs -->
 
-                        <!-- Flushing/Purging -->
+                    <!-- Flushing/Purging -->
                     <li class="dropdown active">
-                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
-                            Flushing/Purging
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="active"><a href='@Url.Action("FlushPurge", "Home")'>Flushing/Purging</a></li>
-                        </ul>
-                    </li>
+                        <li class="active">
+                            <a href='@Url.Action("FlushPurge", "Home")'>Flushing/Purging</a>
+                        </li>
                     <!-- End Flushing/Purging -->
 
                     <!-- Project Photos -->
@@ -65,35 +63,17 @@
 
                     <!-- What is Geothermal -->
                     <li class="dropdown active">
-                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
-                            What is Geothermal
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="active"><a href='@Url.Action("WhatIsGeothermal", "Home")'>What Is Geothermal</a></li>
-                        </ul>
-                    </li>
+                        <li class="active">
+                            <a href='@Url.Action("WhatIsGeothermal", "Home")'>What is Geothermal</a>
+                        </li>
                     <!-- End GeoThermal -->
 
                     <!-- Contact -->
                     <li class="dropdown active">
-                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
-                            Contact
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="active"><a href='@Url.Action("Contact", "Home")'>Contact</a></li>
-                        </ul>
+                    <li class="active">
+                        @*<a href='@Url.Action("Contact", "Home")'>Contact</a>*@
+                        <a href='@Url.Action("Index", "Home")#contactinfo'>Contact</a>
                     </li>
-                    <!-- End Contact -->
-
-                    <!-- What We Do -->
-                    @*<li class="dropdown active">
-                        <a href="javascript:void(0);" class=" dropdown-toggle" data-toggle="dropdown">
-                            What We Do
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="active"><a href='@Url.Action("WhatWeDo", "Home")'>What We Do</a></li>
-                        </ul>
-                    </li>*@
                     <!-- End Contact -->
 
                 </ul>
