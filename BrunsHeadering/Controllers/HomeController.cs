@@ -12,31 +12,31 @@ namespace BrunsHeadering.Controllers
 {
     public class HomeController : Controller
     {
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult Index()
         {
             return View("Index");
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult Contact()
         {
             return View();
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult FlushPurge()
         {
             return View();
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult WhatWeDo()
         {
             return View();
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult WhatIsGeothermal()
         {
             return View();
@@ -44,37 +44,37 @@ namespace BrunsHeadering.Controllers
 
         #region List Of Jobs
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult ListOfJobs_Edu()
         {
             return View();
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult ListOfJobs_Gov()
         {
             return View();
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult ListOfJobs_Heal()
         {
             return View();
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult ListOfJobs_Comm()
         {
             return View();
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult ListOfJobs_House()
         {
             return View();
         }
 
-        //[OutputCache(Duration = 43200)]
+        [OutputCache(Duration = 43200)]
         public ViewResult ListOfJobs_Bus()
         {
             return View();
